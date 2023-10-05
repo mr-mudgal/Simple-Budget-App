@@ -1,0 +1,225 @@
+body {
+    color: whitesmoke;
+    margin: 0;
+    font-family: monospace;
+}
+
+button {
+    cursor: pointer
+}
+
+#action-buttons {
+    text-align: center;
+    &  .act-button {
+        font-size: xxx-large;
+        text-rendering: optimizeLegibility;
+        margin: calc((100dvh / 2) - 5%) 40px 0;
+        border: 0;
+        color: white;
+        border-bottom: 2px solid red;
+        border-top: 2px solid red;
+        border-radius: 20px;
+        background: transparent;
+    }
+    & #list-act-button {
+        list-style: none;
+        padding: 0;
+        display: none;
+    }
+}
+
+.form-divs {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    box-shadow: 0 0 50px -10px green;
+    backdrop-filter: blur(10px);
+    height: calc(100dvh - 40px);
+    width: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+    border-radius: calc(100vh / 20);
+}
+
+#form-cat {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xxx-large;
+    text-rendering: optimizeLegibility;
+    padding-top: 10px;
+    width: fit-content;
+    text-align: center;
+    & select {
+        border: 0;
+        background: transparent;
+        color: whitesmoke;
+        font-size: xx-large;
+        text-rendering: optimizeLegibility;
+        border-bottom: 2px green solid;
+        border-radius: 7px;
+        text-align: center;
+        & option {
+            border-radius: 8px;
+            background: black;
+            color: white;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    & #bud-ent {
+        border-radius: 7px;
+        border: 0;
+        font-size: xx-large;
+        text-rendering: optimizeLegibility;
+        border-bottom: 2px solid white;
+        margin-top: 15px;
+        text-align: center;
+        background: transparent;
+        color: whitesmoke;
+        &::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    & #sub_bud {
+        background: darkgreen;
+        border: 0;
+        font-size: x-large;
+        color: white;
+        margin-top: 40px;
+        border-radius: 10px;
+        cursor: pointer
+    }
+}
+
+& fieldset {
+        border-color: lightcoral;
+        & legend {
+            color: red;
+            text-align: right;
+            margin-right: -18px;
+        }
+    }
+
+#form-cat_cat {
+     display: none;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: xxx-large;
+     text-rendering: optimizeLegibility;
+     padding-top: 10px;
+     width: fit-content;
+     text-align: center;
+     & #cat-ent {
+        border-radius: 7px;
+        border: 0;
+        font-size: xx-large;
+        text-rendering: optimizeLegibility;
+        border-bottom: 2px solid white;
+        margin-top: 15px;
+        text-align: center;
+        background: transparent;
+        color: whitesmoke;
+        &::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+     & #sub_cat {
+        background: darkgreen;
+        border: 0;
+        font-size: x-large;
+        color: white;
+        margin-top: 40px;
+        border-radius: 10px;
+        cursor: pointer
+    }
+ }
+
+@media (1047px <= width) {
+    body {
+        background: url('../images/b_bg-wide.png');
+        background-size: cover;
+    }
+}
+
+@media (697px <= width < 1047px) {
+    body {
+        background: url('../images/b_bg-wide.png');
+        background-size: cover;
+    }
+    #action-buttons .act-button {
+        font-size: xx-large;
+        text-rendering: optimizeLegibility;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #form-cat {
+        font-size: xxx-large;
+        text-rendering: optimizeLegibility;
+        & select {
+            font-size: xx-large;
+            text-rendering: optimizeLegibility;
+        }
+        & #bud-ent {
+            font-size: xx-large;
+            text-rendering: optimizeLegibility;
+        }
+    }
+}
+
+@media (697px > width) {
+    body {
+        background-image: url('../images/b_bg-tall.png');
+        background-size: cover;
+    }
+    #action-buttons {
+        display: ruby;
+        & .act-button {
+            display: none;
+        }
+        & #list-act-button {
+            display: unset;
+            margin: 0;
+            & button {
+                font-size: xx-large;
+                text-rendering: optimizeLegibility;
+                margin: calc((100dvh / 4.5) - 5%) 0 0;
+                border: 0;
+                color: white;
+                border-bottom: 2px solid red;
+                border-top: 2px solid red;
+                border-radius: 7px;
+                background: transparent;
+            }
+        }
+    }
+    #form-divs {
+        backdrop-filter: blur(5px);
+    }
+    #form-cat {
+        font-size: xx-large;
+        text-rendering: optimizeLegibility;
+        & select {
+            font-size: x-large;
+            text-rendering: optimizeLegibility;
+        }
+        & #bud-ent {
+            font-size: x-large;
+            text-rendering: optimizeLegibility;
+        }
+    }
+    #form-cat_cat {
+        font-size: xx-large;
+        text-rendering: optimizeLegibility;
+        & #cat-ent {
+            font-size: x-large;
+            text-rendering: optimizeLegibility;
+        }
+    }
+}

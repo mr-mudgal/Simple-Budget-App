@@ -1,0 +1,14 @@
+{%extends 'home.html'%}
+{%block title%}
+Login
+{%endblock%}
+
+{%block body%}
+<div class="form-divs">                    
+  <form action="" method="POST">{% csrf_token %}
+    <label>Username: <input name="username" type="text"></label>
+    <label>Password: <input name="password" type="password"></label>
+    <input type="submit" value="Log-in">
+  </form>
+</div>
+{%endblock%}
