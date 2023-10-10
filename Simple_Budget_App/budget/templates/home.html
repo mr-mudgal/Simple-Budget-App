@@ -10,33 +10,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-{%block body%}
-    {%if logged == 'True'%}
+{% block body %}
+    {% if logged == True %}
         <div class="form-divs" id="form-divs">
             <div id="action-buttons">
+                <button id="show_budget" class="act-button">Show Budget</button>
                 <button id="p_bud" class="act-button">Add Budget</button>
                 <button id="p_cat" class="act-button">Add Category</button>
-                <button id="logout" class="act-button">Log Out</button>
+                <button id="logout" class="act-button"><a href={% url 'logout' %}>Log Out</a></button>
                 <ul id="list-act-button">
+                    <li><button id="show_budget_li">Show Budget</button></li>
                     <li><button id="p_bud_li">Add Budget</button></li>
                     <li><button id="p_cat_li">Add Category</button></li>
-                    <li><button id="logout_li">Log Out</button></li>
+                    <li><button id="logout_li"><a href={% url 'logout' %}>Log Out</a></button></li>
                 </ul>
             </div>
             <form action="" method="POST" id="form-cat">{% csrf_token %}
                 <fieldset>
-                    <legend>Add Budget for Category</legend>
+                <legend>Add Budget for Category</legend>
                 <label>
-                <select name="selected_category" id="cat_sel">
-                    <option value="">-------Select a Category-------</option>
-                    <option value="Food">Food</option>
-                    <option value="Clothing">Clothing</option>
-                    <option value="Entertainment">Entertainment</option>
+                <select name="selected_category" id="cat_sel" title="select_cat_">
+                    {% for cats in all_cat %}
+                        <option value="{{ cats }}">{{ cats }}</option>
+                    {% endfor %}
                 </select>
                 </label>
                 <br>
                 <label>
-                    <input type="number" placeholder="Budget: Rs. 0" name="entered_budget" id="bud-ent">
+                    <input type="number" placeholder="budget" name="entered_budget" id="bud-ent" value="0">
                 </label>
                 <br>
                 <input type="submit" value="Add Budget" id="sub_bud">
@@ -46,16 +47,33 @@
                 <fieldset>
                     <legend>Add a New Category</legend>
                 <label>
-                    <input type="text" placeholder="Category Name" name="entered_category" id="cat-ent">
+                    <input type="text" placeholder="Category Name" name="entered_category" id="cat-ent" required oninvalid="this.setCustomValidity('Please, Enter category name before proceeding!')"
+                           onchange="this.setCustomValidity('')">
                 </label>
                 <br>
                 <input type="submit" value="Add Budget" id="sub_cat">
                 </fieldset>
             </form>
         </div>
-    {%else%}
-        wrong
-    {%endif%}
-{%endblock%}
+        <div class="form-divs" id="bud-divs">
+            <i class="ri-arrow-left-s-fill" id="back_menu">back</i>
+            <br>
+            {% if data %}
+                <table id="table_show_budget">
+                    <tr><th class="left_side_table">Category</th><th class="mid_side_table">Budget</th><th class="mid_2_side_table">Edit</th><th class="right_side_table">Delete</th></tr>
+                {% for d in data %}
+                    <tr><td class="left_side_table">{{ d.category_name_id }}</td><td class="mid_side_table">{{ d.budget }}</td><td class="mid_2_side_table">
+                        <i class="ri-edit-circle-fill" onclick="editBudget(`{{ d.category_name_id }}`)"></i></td><td class="right_side_table"><i class="ri-delete-bin-6-fill" onclick="deleteBudget(`{{ d.category_name_id }}`)"></i></td></tr>
+                    <br>
+                {% endfor %}
+                </table>
+            {% else %}
+                <h1>No records found</h1>
+            {% endif %}
+        </div>
+    {% else %}
+        <h1>Log In first to perform any action</h1>
+    {% endif %}
+{% endblock %}
 </body>
 </html>

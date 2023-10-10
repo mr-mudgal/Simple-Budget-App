@@ -10,10 +10,11 @@ button {
 
 #action-buttons {
     text-align: center;
+    width: 100%;
     &  .act-button {
         font-size: xxx-large;
         text-rendering: optimizeLegibility;
-        margin: calc((100dvh / 2) - 5%) 40px 0;
+        margin: calc((100dvh / 2) - 5%) 30px 0;
         border: 0;
         color: white;
         border-bottom: 2px solid red;
@@ -38,6 +39,15 @@ button {
     top: 20px;
     left: 20px;
     border-radius: calc(100vh / 20);
+    & ~ #bud-divs {
+        display: none;
+        #back_menu {
+            cursor: pointer;
+            position: relative;
+            top: 1%;
+            left: 1%;
+        }
+    }
 }
 
 #form-cat {
@@ -77,6 +87,7 @@ button {
         text-align: center;
         background: transparent;
         color: whitesmoke;
+        width: 45%;
         &::-webkit-inner-spin-button{
             -webkit-appearance: none;
         }
@@ -141,6 +152,33 @@ button {
     }
  }
 
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+#table_show_budget {
+    border: 4px green solid;
+    margin: auto;
+    text-align: center;
+    & .left_side_table {
+        border-bottom: 2px green solid;
+        border-right: 2px red dotted;
+    }
+    & .mid_side_table, .mid_2_side_table {
+        border-bottom: 2px green solid;
+        border-right: 2px red dotted
+    }
+    & .right_side_table {
+        border-bottom: 2px green solid;
+    }
+}
+
+.ri-delete-bin-6-fill {
+    color: red;
+    cursor: not-allowed;
+}
+
 @media (1047px <= width) {
     body {
         background: url('../images/b_bg-wide.png');
@@ -150,14 +188,28 @@ button {
 
 @media (697px <= width < 1047px) {
     body {
-        background: url('../images/b_bg-wide.png');
+        background: url('../images/b_bg.png');
         background-size: cover;
     }
-    #action-buttons .act-button {
-        font-size: xx-large;
-        text-rendering: optimizeLegibility;
-        margin-left: 15px;
-        margin-right: 15px;
+    #action-buttons {
+        & .act-button {
+            display: none;
+        }
+        & #list-act-button {
+            display: unset;
+            margin: 0;
+            & button {
+                font-size: xx-large;
+                text-rendering: optimizeLegibility;
+                margin: calc((100dvh / 4.5) - 5%) 0 0;
+                border: 0;
+                color: white;
+                border-bottom: 2px solid red;
+                border-top: 2px solid red;
+                border-radius: 7px;
+                background: transparent;
+            }
+        }
     }
     #form-cat {
         font-size: xxx-large;
@@ -179,7 +231,6 @@ button {
         background-size: cover;
     }
     #action-buttons {
-        display: ruby;
         & .act-button {
             display: none;
         }
@@ -189,7 +240,7 @@ button {
             & button {
                 font-size: xx-large;
                 text-rendering: optimizeLegibility;
-                margin: calc((100dvh / 4.5) - 5%) 0 0;
+                margin: calc((100dvh / 5) - 5%) 0 0;
                 border: 0;
                 color: white;
                 border-bottom: 2px solid red;
@@ -201,6 +252,7 @@ button {
     }
     #form-divs {
         backdrop-filter: blur(5px);
+        overflow: auto;
     }
     #form-cat {
         font-size: xx-large;
@@ -210,6 +262,7 @@ button {
             text-rendering: optimizeLegibility;
         }
         & #bud-ent {
+            width: 50%;
             font-size: x-large;
             text-rendering: optimizeLegibility;
         }
