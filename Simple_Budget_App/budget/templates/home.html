@@ -31,7 +31,7 @@
                 <label>
                 <select name="selected_category" id="cat_sel" title="select_cat_">
                     {% for cats in all_cat %}
-                        <option value="{{ cats }}">{{ cats }}</option>
+                        <option value="{{ cats.category_name }}">{{ cats.category_name }}</option>
                     {% endfor %}
                 </select>
                 </label>
@@ -60,10 +60,14 @@
             <br>
             {% if data %}
                 <table id="table_show_budget">
-                    <tr><th class="left_side_table">Category</th><th class="mid_side_table">Budget</th><th class="mid_2_side_table">Edit</th><th class="right_side_table">Delete</th></tr>
+                    <tr><th class="left_side_table">Category</th><th class="mid_side_table">Budget</th><th class="mid_side_table">Edit</th><th  class="mid_side_table">Transfer</th><th
+                            class="right_side_table">Delete</th></tr>
                 {% for d in data %}
-                    <tr><td class="left_side_table">{{ d.category_name_id }}</td><td class="mid_side_table">{{ d.budget }}</td><td class="mid_2_side_table">
-                        <i class="ri-edit-circle-fill" onclick="editBudget(`{{ d.category_name_id }}`)"></i></td><td class="right_side_table"><i class="ri-delete-bin-6-fill" onclick="deleteBudget(`{{ d.category_name_id }}`)"></i></td></tr>
+                    <tr><td class="left_side_table">{{ d.category_name_id }}</td>
+                        <td class="mid_side_table">{{ d.budget }}</td>
+                        <td class="mid_side_table"><i class="ri-edit-circle-fill" onclick="editBudget(`{{ d.category_name_id }}`)"></i></td>
+                        <td class="mid_side_table"><i class="ri-share-circle-fill" onclick="transfer(`{{ d.category_name_id }}`)"></i></td>
+                        <td class="right_side_table"><i class="ri-delete-bin-6-fill" onclick="deleteBudget(`{{ d.category_name_id }}`)"></i></td></tr>
                     <br>
                 {% endfor %}
                 </table>
@@ -71,8 +75,6 @@
                 <h1>No records found</h1>
             {% endif %}
         </div>
-    {% else %}
-        <h1>Log In first to perform any action</h1>
     {% endif %}
 {% endblock %}
 </body>

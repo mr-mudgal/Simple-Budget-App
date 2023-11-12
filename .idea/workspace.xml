@@ -5,22 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b36eb6bd-c4e5-4d66-a0a4-fe145e8b711e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Simple-Budget-App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Simple-Budget-App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f20a56f3-5651-4029-8629-99f7ff2691fd.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f20a56f3-5651-4029-8629-99f7ff2691fd/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b260cc21-7ec4-4b68-8d96-0de4446e8789.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b260cc21-7ec4-4b68-8d96-0de4446e8789.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b260cc21-7ec4-4b68-8d96-0de4446e8789/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b260cc21-7ec4-4b68-8d96-0de4446e8789/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/asgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/Simple_Budget_App/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/admin.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/budget_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/budget_logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/migrations/0002_alter_budgetmodel_category_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/migrations/0003_alter_budgetmodel_category_name.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/static/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/static/javascripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/static/stylesheets/styler.css" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/static/stylesheets/styler.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simple_Budget_App/budget/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/budget/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Budget_App/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Budget_App/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,57 +76,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/media/mr-mudgal/SanDisk_32/Programming/Python/Works/IT_SKILL_VERIFY&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/media/mr-mudgal/SanDisk_32/Programming/Python/Simple-Budget-App",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Simple-Budget-App" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/BNI Chapters Final" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/BNI Chapters Final/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -127,7 +114,15 @@
       <workItem from="1696619121705" duration="10305000" />
       <workItem from="1696684532730" duration="10690000" />
       <workItem from="1696837140369" duration="625000" />
-      <workItem from="1696849060170" duration="15022000" />
+      <workItem from="1696849060170" duration="16965000" />
+      <workItem from="1696925018553" duration="48000" />
+      <workItem from="1696925087588" duration="42000" />
+      <workItem from="1696929065780" duration="7894000" />
+      <workItem from="1697023026323" duration="6000" />
+      <workItem from="1697172339473" duration="1230000" />
+      <workItem from="1698785870396" duration="747000" />
+      <workItem from="1698810587928" duration="6000" />
+      <workItem from="1699768033661" duration="23962000" />
     </task>
     <servers />
   </component>
@@ -152,6 +147,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Simple_Budget_App$urls.coverage" NAME="urls Coverage Results" MODIFIED="1696943338059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simple_Budget_App/budget" />
     <SUITE FILE_PATH="coverage/Simple_Budget_App$budget_logic.coverage" NAME="budget_logic Coverage Results" MODIFIED="1696370315938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simple_Budget_App/budget" />
     <SUITE FILE_PATH="coverage/Simple_Budget_App$2.coverage" NAME="2 Coverage Results" MODIFIED="1696430233305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/BNI Chapters Final" />
     <SUITE FILE_PATH="coverage/Simple_Budget_App$main.coverage" NAME="main Coverage Results" MODIFIED="1696477678311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/BNI Chapters Final" />

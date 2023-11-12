@@ -165,7 +165,7 @@ a {
         border-bottom: 2px green solid;
         border-right: 2px red dotted;
     }
-    & .mid_side_table, .mid_2_side_table {
+    & .mid_side_table {
         border-bottom: 2px green solid;
         border-right: 2px red dotted
     }
@@ -177,6 +177,40 @@ a {
 .ri-delete-bin-6-fill {
     color: red;
     cursor: not-allowed;
+}
+
+#login-form-div {
+    text-align: center;
+}
+
+#login-form {
+    position: relative;
+    top: 15%;
+}
+
+h1 {
+    margin: 0;
+    position: relative;
+    top: 5%
+}
+
+h3 {
+    margin: 0;
+    position: relative;
+    top: 9%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    border: 0;
+    border-radius: 7px;
+    margin-top: 3%;
+    text-align: center;
+    &:focus {
+        outline: none
+    }
 }
 
 @media (1047px <= width) {

@@ -4,10 +4,14 @@ Login
 {%endblock%}
 
 {%block body%}
-<div class="form-divs">                    
-  <form action="" method="POST">{% csrf_token %}
-    <label>Username: <input name="username" type="text"></label>
-    <label>Password: <input name="password" type="password"></label>
+<div class="form-divs" id="login-form-div">
+    <h1>Login or Logup to use the Budget App</h1>
+    <h3>If you are a new user, just enter your Username and the Password and your account would be created automatically!</h3>
+  <form action="" method="POST" id="login-form">{% csrf_token %}
+    <label><input name="username" type="text" placeholder="Username [20 characters]"></label>
+      <br>
+    <label><input name="password" type="password" placeholder="Password [6 characters]"></label>
+      <br>
     <input type="submit" value="Log-in">
   </form>
 </div>

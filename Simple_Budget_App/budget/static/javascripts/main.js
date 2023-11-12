@@ -137,22 +137,19 @@ document.onclick = function (event) {
     }
 }
 
-
 function deleteBudget(del_bud) {
     open(`/delete-${del_bud}`, '_self')
 }
 
 function editBudget(edit_bud) {
     let new_bud = parseInt(prompt('Enter the new budget'))
-    if (!isNaN(parseInt(new_bud))) {
-        alert(`New Budget for category ${edit_bud} is = ${parseInt(new_bud)}`)
-        open(`/edit-${edit_bud}:${new_bud}`, '_self')
-    }
-    else{
-        alert('Enter only number')
-    }
+    if (!isNaN(parseInt(new_bud))) open(`/edit-${edit_bud}:${new_bud}`, '_self')
 }
 
-if (window.history.replaceState) {
-    window.history.replaceState( null, null, window.location.href );
+function transfer(fromm) {
+    let to = prompt('Enter the Exact Category Name you want to transfer to')
+    let amt = parseInt(prompt('Enter the Amount you want to transfer'))
+    if (!isNaN(parseInt(amt))) open(`/transfer-${fromm}-${parseInt(amt)}-${to}`, '_self')
 }
+
+if (window.history.replaceState) window.history.replaceState( null, null, window.location.href )
