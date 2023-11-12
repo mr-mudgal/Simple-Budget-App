@@ -25,7 +25,11 @@ To execute the code in your local system, follow the below guidelines:
 #### HAPPY EXPLORING APPLICATION!
 ### Some Snapshots
 _Here you will find the snapshots of the website on both PC and Mobile devices._
-
+![Screenshot from 2023-11-12 22-49-18](https://github.com/mr-mudgal/Simple-Budget-App/assets/100049039/5359550f-aa32-450a-8ad9-52bfa612b693)
+![Screenshot from 2023-11-12 23-11-04](https://github.com/mr-mudgal/Simple-Budget-App/assets/100049039/ab001bc3-6a8d-453d-bf12-8e998e045f1d)
+![Screenshot from 2023-11-12 23-09-27](https://github.com/mr-mudgal/Simple-Budget-App/assets/100049039/aadb9ce0-ccf4-4ec6-ac30-705d0b7aaa38)
+![photo_2023-11-12_23-42-16](https://github.com/mr-mudgal/Simple-Budget-App/assets/100049039/cb40b8b7-04b9-4529-85bd-cbb3962ca35f)
+![photo_2023-11-12_23-05-12](https://github.com/mr-mudgal/Simple-Budget-App/assets/100049039/e5fd636f-4d3d-4bc7-8664-0dab14c5d3fb)
 ---
 ### Things to Note
 - This is NOT an expense tracker app. This is the simple Budget allocation app. Although, we can add the functionality to add expense tracking where we can add the items brought, auto-renew 
