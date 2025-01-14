@@ -8,9 +8,9 @@ Login
     <h1>Login or Logup to use the Budget App</h1>
     <h3>If you are a new user, just enter your Username and the Password and your account would be created automatically!</h3>
   <form action="" method="POST" id="login-form">{% csrf_token %}
-    <label><input name="username" type="text" placeholder="Username [20 characters]"></label>
+    <label><input name="username" type="text" style="width: 200px; height: 20px" placeholder="Username [20 characters]"></label>
       <br>
-    <label><input name="password" type="password" placeholder="Password [6 characters]"></label>
+    <label><input name="password" type="password" style="width: 200px; height: 20px" placeholder="Password [6 characters]"></label>
       <br>
     <input type="submit" value="Log-in">
   </form>
